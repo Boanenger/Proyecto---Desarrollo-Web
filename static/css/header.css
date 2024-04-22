@@ -1,0 +1,105 @@
+/* Generales */
+:root{
+    --color-primario: #ced2d400;
+    --color-fondo-header: var(--color-primario);
+    --color-texto-header: rgba(7, 7, 7, 0.534);
+    --color-blanco-body: rgba(234, 240, 241, 0.863);
+    --color-negro-body: rgba(16, 17, 17, 0.5);
+    --colo-menu-ham: rgba(193, 201, 206, 0.048);
+    --color-logo-sombra: rgba(193, 201, 206, 0.5);
+    --color-general: rgb(143, 2, 2);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-general);
+    font: var(--color-general);
+}
+
+@font-face{
+    font-family: bell;
+    src: url("../../assets/font/BELL.TTF");
+}
+
+/* Encabezado  */
+header{
+    width: 100%;
+    background: linear-gradient(to right, var(--color-logo-sombra), var(--color-blanco-body) );
+    color: var(--color-texto-header);
+    text-align: center;
+    box-shadow: 0px 2px 4px 0px rgb(0, 0,0,0.6);
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 25%;
+    
+}
+
+.bnav_item{
+    text-decoration: none;
+    font-family: bell;
+    font-size: large;
+}
+
+.nav_li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.nav_li.activate, .nav_li:hover{
+    background: var(--color-logo-sombra);
+    transition: .5s;
+}
+
+/* Responsive menu Tablet*/
+@media only screen and (max-width: 770px){
+
+}
+
+
+/* Responsive menu Movil */
+@media only screen and (max-width: 430px){
+
+}
+
+
+body{
+    background: radial-gradient(var(--color-blanco-body),var(--color-logo-sombra), var(--color-primario));
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(to right, var(--color-logo-sombra), var(--color-blanco-body) );
+    text-align: center;
+    box-shadow: 0px 1px 4px 2px rgb(0, 0,0,0.6);
+}
+
+.cont_lista_li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 25px;
+}
+
+
+/* responsive design */
+/* Portatil */
+@media screen and (max-width: 1024px) and (max-width: 1200px){}
+
+/* Tablet */
+@media screen and (max-width: 768px) and (max-width: 1023px){}
+
+/* mobile L*/
+@media screen and (max-width: 425px) and (max-width: 767px){}
+
+/* mobile M*/
+@media screen and (max-width: 375px) and (max-width: 424px){}
+
+/* mobile S*/
+@media screen and (max-width: 320px) and (max-width: 374px){}

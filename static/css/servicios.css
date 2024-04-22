@@ -1,0 +1,506 @@
+/* Generales */
+:root {
+  --color-primario: #ced2d400;
+  --color-fondo-header: var(--color-primario);
+  --color-texto-header: rgba(7, 7, 7, 0.534);
+  --color-blanco-body: rgba(234, 240, 241, 0.863);
+  --color-negro-body: rgba(16, 17, 17, 0.5);
+  --color-logo-sombra: rgba(193, 201, 206, 0.5);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: bell;
+}
+
+@font-face {
+  font-family: bell;
+  src: url("../../assets/font/BELL.TTF");
+}
+
+.cont_pcipal {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1f 1fr;
+  row-gap: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 25px;
+}
+
+/* seccion limpieza */
+.limpieza {
+  margin: 10px 50px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.titulos-lc,
+.titulos-ls,
+.titulos-le,
+.titulos-lo {
+  background-color: rgba(201, 202, 202, 0.795);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.limpieza-item {
+  display: inline-block;
+  margin-right: 25px;
+  background-color: var(--color-logo-sombra);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+.limpieza-item p {
+  padding: 15px;
+  text-align: justify;
+}
+
+.limpieza-item img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* seccion tutorias */
+.tutorias {
+  margin: 10px 50px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+.tutorias-titulos {
+  display: inline;
+  text-align: center;
+}
+
+.tutorias-item {
+  display: inline-block;
+  margin-right: 25px;
+  background-color: var(--color-logo-sombra);
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+.tutorias-item p {
+  padding: 15px;
+  text-align: justify;
+}
+
+.tutorias-item img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* seccion generales */
+.generales {
+  padding: 25px;
+  margin: 10px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+.generales-titulos {
+  display: inline;
+  text-align: center;
+}
+
+.generales-item {
+  display: inline-block;
+  margin-right: 25px;
+  background-color: var(--color-logo-sombra);
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+.generales-item p {
+  padding: 15px;
+  text-align: justify;
+}
+
+.generales-item img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* seccion otros */
+.otros {
+  padding: 25px;
+  margin: 10px 50px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.otros-item {
+  display: inline-block;
+  margin-right: 25px;
+  background-color: var(--color-logo-sombra);
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+.otros-item p {
+  padding: 15px;
+  text-align: justify;
+}
+
+.otros-item img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* slider de titulos */
+.otros_titulos {
+  grid-column: 1/4;
+  width: 400px;
+  max-width: 850px;
+  height: auto;
+  margin: 0 auto 0;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 3%;
+}
+
+.otros_titulos-lista {
+  text-align: center;
+  display: flex;
+  padding: 15px;
+  width: 500%;
+  animation: slider 10s infinite alternate linear;
+}
+
+.otros_titulos-li {
+  width: 100%;
+  position: relative;
+  list-style: none;
+}
+
+@keyframes slider {
+  0% {
+    margin-left: 0;
+  }
+  10% {
+    margin-left: 0;
+  }
+
+  10% {
+    margin-left: -50%;
+  }
+  20% {
+    margin-left: -50%;
+  }
+
+  20% {
+    margin-left: -100%;
+  }
+  30% {
+    margin-left: -100%;
+  }
+
+  30% {
+    margin-left: -150%;
+  }
+  40% {
+    margin-left: -150%;
+  }
+
+  40% {
+    margin-left: -200%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+
+  50% {
+    margin-left: -250%;
+  }
+  60% {
+    margin-left: -250%;
+  }
+
+  60% {
+    margin-left: -300%;
+  }
+  70% {
+    margin-left: -300%;
+  }
+
+  70% {
+    margin-left: -350%;
+  }
+  80% {
+    margin-left: -350%;
+  }
+
+  80% {
+    margin-left: -400%;
+  }
+  90% {
+    margin-left: -400%;
+  }
+
+  90% {
+    margin-left: -415%;
+  }
+  100% {
+    margin-left: -415%;
+  }
+}
+
+/* responsive design */
+/* Portatil */
+@media screen and (max-width: 1024px) and (max-width: 1200px) {
+  h1 {
+    font-size: 20px;
+  }
+  .limpieza,
+  .tutorias,
+  .generales,
+  .otros {
+    padding: 25px;
+    margin: 10px 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+  .titulos-lc,
+  .titulos-ls,
+  .titulos-le,
+  .titulos-lo {
+    background-color: rgba(201, 202, 202, 0.795);
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .otros_titulos {
+    grid-column: 1/4;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin: 0 auto 0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 3%;
+  }
+  .limpieza-item p,
+  .tutorias-item p,
+  .generales-item p,
+  .otros-item p {
+    font-size: 15px;
+    padding: 15px;
+    text-align: justify;
+  }
+} 
+
+/* Tablet */
+@media screen and (max-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 20px;
+  }
+  .limpieza,
+  .tutorias,
+  .generales,
+  .otros {
+    padding: 25px;
+    margin: 10px 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+  .titulos-lc,
+  .titulos-ls,
+  .titulos-le,
+  .titulos-lo {
+    background-color: rgba(201, 202, 202, 0.795);
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .otros_titulos {
+    grid-column: 1/4;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin: 0 auto 0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 3%;
+  }
+  .limpieza-item p,
+  .tutorias-item p,
+  .generales-item p,
+  .otros-item p {
+    font-size: 15px;
+    padding: 15px;
+    text-align: justify;
+  }
+}
+
+/* mobile L*/
+@media screen and (max-width: 425px) and (max-width: 767px) {
+  h1 {
+    font-size: 15px;
+  }
+  .limpieza,
+  .tutorias,
+  .generales,
+  .otros {
+    align-items: center;
+    margin: 0 auto 0;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .titulos-lc,
+  .titulos-ls,
+  .titulos-le,
+  .titulos-lo {
+    background-color: rgba(201, 202, 202, 0.795);
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .otros_titulos {
+    grid-column: 1/4;
+    align-items: center;
+    width: 190px;
+    height: auto;
+    margin: 0 auto 0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 3%;
+  }
+  .limpieza-item p,
+  .tutorias-item p,
+  .generales-item p,
+  .otros-item p {
+    font-size: 10px;
+    padding: 15px;
+    text-align: justify;
+  }
+}
+
+/* mobile M*/
+@media screen and (max-width: 375px) and (max-width: 424px) {
+  h1 {
+    font-size: 15px;
+  }
+  .limpieza,
+  .tutorias,
+  .generales,
+  .otros {
+    align-items: center;
+    margin: 0 auto 0;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .titulos-lc,
+  .titulos-ls,
+  .titulos-le,
+  .titulos-lo {
+    background-color: rgba(201, 202, 202, 0.795);
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .otros_titulos {
+    grid-column: 1/4;
+    align-items: center;
+    width: 190px;
+    height: auto;
+    margin: 0 auto 0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 3%;
+  }
+  .limpieza-item p,
+  .tutorias-item p,
+  .generales-item p,
+  .otros-item p {
+    font-size: 10px;
+    padding: 15px;
+    text-align: justify;
+  }
+}
+
+/* mobile S*/
+@media screen and (max-width: 320px) and (max-width: 374px) {
+  h1 {
+    font-size: 15px;
+  }
+  .limpieza,
+  .tutorias,
+  .generales,
+  .otros {
+    align-items: center;
+    margin: 0 auto 0;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .titulos-lc,
+  .titulos-ls,
+  .titulos-le,
+  .titulos-lo {
+    background-color: rgba(201, 202, 202, 0.795);
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .otros_titulos {
+    grid-column: 1/4;
+    align-items: center;
+    width: 190px;
+    height: auto;
+    margin: 0 auto 0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 3%;
+  }
+  .limpieza-item p,
+  .tutorias-item p,
+  .generales-item p,
+  .otros-item p {
+    font-size: 10px;
+    padding: 15px;
+    text-align: justify;
+  }
+}
+
+
+
+
+
+
+
+
+

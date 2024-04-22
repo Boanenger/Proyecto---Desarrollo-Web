@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/img/Jah-yire-02.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/contactanos.css">
+    <script src="https://kit.fontawesome.com/212e7414e9.js" crossorigin="anonymous"></script>
+    <title>JAH - YIRE</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div>
+            <!-- Logo -->
+            <img id="logo" src="../static/img/Jah-yire 03.png" alt="">
+        </div>
+        <!-- Menú de navegación -->
+        <nav class="bnav">
+            <ul class="nav_ul">
+                <li class="nav_li">
+                    <i class="fas fa-home"></i>
+                    <a href="../index.html" class="bnav_item">Bienvenidos</a>
+                </li>
+                <li class="nav_li">
+                    <i class="fas fa-user-friends"></i>
+                    <a href="servicios.html" class="bnav_item">Servicios</a>
+                </li>
+                <li class="nav_li">
+                    <i class="fas fa-question-circle"></i>
+                    <a href="conocenos.html" class="bnav_item">Conocenos</a>
+                </li>
+                <li class="nav_li">
+                    <i class="fas fa-address-book"></i>
+                    <a href="contactanos.html" class="bnav_item">Contactanos</a>
+                </li>
+                <li class="nav_li">
+                    <i class="fas fa-handshake"></i>
+                    <a href="trabajar.html" class="bnav_item">Trabaja con nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <main class="cont_pcipal">
+        <h1>Formulario de consulta y contratacion</h1>
+        <p>
+            Completa el siguiente formulario, y en la brevedad nos pondremos en contacto con vos.
+        </p>
+        <section class="sec_form">
+            <form class="form">
+                <div class="cont_form">
+                    <div class="form-nom_ape">
+                        <div class="dato1">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="dato1">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido" id="apellido" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-direc">
+                        <div class="dato2">
+                            <label for="direccion">Direccion</label>
+                            <input type="text" name="direccion" id="direccion">
+                        </div>
+                        <div class="dato2">
+                            <label for="localidad">Localidad:</label>
+                            <input type="text" name="localidad" id="localidad" required>
+                        </div>
+                        <div class="dato2">
+                            <label for="provincia">Provincia:</label>
+                            <input type="text" name="provincia" id="provincia" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-contac">
+                        <div class="dato3">
+                            <label for="telefono">Telefono:</label>
+                            <input type="tel" name="telefono" id="telefono" maxlength="10" required>
+                        </div>
+                        <div class="dato3">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-motiv">
+                    <h3>Tipo de Servicio</h3>
+                    <ul>
+                        <li>
+                            <input type="radio" name="servicios" id="patio">
+                            <label for="patio">Permanente</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="servicios" id="patio">
+                            <label for="patio">Temporal</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="servicios" id="patio">
+                            <label for="patio">Por hora</label>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="form-servicio">
+                    <h3>Servicio que Desea</h3>
+                    <ul class="serv1">
+                        <h4>LIMPIEZA DE:</h4>
+                        <li>
+                            <input type="checkbox" name="servicios" id="casa">
+                            <label for="casa">CASA</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="oficina">
+                            <label for="oficina">OFICINA</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="salon">
+                            <label for="salon">SALON</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="edificio">
+                            <label for="edificio">EDIFICIO</label>
+                        </li>
+                    </ul>
+                    <ul class="serv1">
+                        <H4>CUIDADO DE:</H4>
+                        <li>
+                            <input type="checkbox" name="servicios" id="anciano">
+                            <label for="anciano">ANCIANOS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="ninos">
+                            <label for="ninos">NIÑOS</label>
+                        </li>
+                    </ul>
+                    <ul class="serv1">
+                        <H4>TUTORIAS DE: </H4>
+                        <li>
+                            <input type="checkbox" name="servicios" id="primaria">
+                            <label for="primaria">PRIMARIA</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="secundaria">
+                            <label for="secundaria">SECUNDARIA</label>
+                        </li>
+                    </ul>
+                    <ul class="serv1">
+                        <h4>REPARACIONES</h4>
+                        <li>
+                            <input type="checkbox" name="servicios" id="construccion">
+                            <label for="construccion">CONSTRUCCION</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="electricista">
+                            <label for="electricista">ELECTRICISTA</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="plomeria">
+                            <label for="plomeria">PLOMERIA</label>
+                        </li>
+                    </ul>
+                    <ul class="otros serv1">
+                        <h4 class="otros_tit">OTROS</h4>
+                        <li>
+                            <input type="checkbox" name="servicios" id="pintor">
+                            <label for="pintor">PINTOR</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="paseador">
+                            <label for="paseador">PASEO DE PERROS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="peluqueria">
+                            <label for="peluqueria">PELUQUERIA</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="patios">
+                            <label for="patios">LIMPIEZA DE PATIOS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="costureria">
+                            <label for="costureria">COSTURERIA</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="servicios" id="animacion">
+                            <label for="animacion">ANIMACION DE FIESTAS</label>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="aceptacion">
+                    <p>
+                        JAH-YIRE agradece su colaboración en el llenado de los datos personales solicitados en nuestro
+                        canal
+                        de contacto, por lo anterior solicita su autorización para que de manera previa, libre y
+                        debidamente
+                        informada, permita dar tratamiento a los datos personales de contacto que subministra a través
+                        de la
+                        siguiente plataforma electrónica. Estos datos solo serán utilizados con la finalidad de mantener
+                        una
+                        comunicación efectiva en la cual le serán ofrecidos nuestros productos y servicios.
+                    </p>
+                    <input type="checkbox" name="acepto" id="acepto">
+                    <label for="acepto">Acepto</label>
+                </div>
+                <br>
+                <div class="form-botones">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+
+
+            </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="cont_footer">
+            <h3>Seguinos en: </h3>
+            <ul class="cont_lista">
+                <li class="cont_lista_li">
+                    <i class="fab fa-facebook"></i>
+                    <a href="">Facebook</a>
+                </li>
+                <li class="cont_lista_li">
+                    <i class="fab fa-instagram"></i>
+                    <a href="">@Instagram</a>
+                </li>
+                <li class="cont_lista_li">
+                    <i class=" fab fa-x-twitter"></i>
+                    <a href="">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

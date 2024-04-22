@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: bell;
+  src: url("../../assets/font/BELL.TTF");
+}
+
+/* Carrusel Baner */
+.cont_banner {
+  width: 100vw;
+  margin-top: 25px;
+}
+.cont_banner_slider {
+  width: 50vw;
+  height: auto;
+  margin: 5px auto 0;
+  overflow: hidden;
+  border-radius: 3%;
+}
+
+.cont_banner_lista {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 18s infinite alternate linear;
+}
+
+.cont_banner_li {
+  width: 100vw;
+  list-style: none;
+  position: relative;
+}
+
+.texto h2{
+  position: absolute;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 0 130px;
+  bottom: 50px;
+  color: #000;
+}
+
+
+.cont_banner_slider img {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/* voltea Tarjeta  */
+
+.cont_etiq {
+  width: 100vw;
+  padding: 10px 10px 10px 10px;
+}
+
+.cont_etiq_grid {
+  width: 50vw;
+  margin: 15px auto;
+  display: flex;
+  grid-gap: 10px;
+}
+
+.cont_etiq_flip_card {
+  margin: auto;
+  width: 70%;
+  height: 60vh;
+  perspective: 2000px;
+  color: darkred;
+}
+
+.cont_etiq_flip_card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(35000, 0.2);
+  border-radius: 28px;
+  transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+  transform-style: preserve-3d;
+}
+
+.cont_etiq_flip_card-front img,
+.cont_etiq_flip_card-back {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  display: inline-block;
+  border-radius: 28px;
+  box-shadow: 4px 4px 4px 4px rgb(0, 0, 0, 0.6);
+  backface-visibility: hidden;
+}
+
+.cont_etiq_flip_card-front {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cont_etiq_flip_card-back {
+  font-size: 1.05rem;
+  text-align: center;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background-color: #b1cfc8;
+  transform: rotateY(180deg);
+}
+
+.cont_etiq_flip_card-back li {
+  list-style-type: none;
+}
+
+.cont_etiq_flip_card:hover .cont_etiq_flip_card-inner {
+  transform: rotateY(-180deg);
+}
+
+/* responsive design */
+/* mobile S*/
+@media screen and (max-width: 320px) and (max-width: 374px) {
+  .cont_banner_slider {
+    width: 80vw;
+    height: auto;
+    margin: 5px auto 0;
+    overflow: hidden;
+    border-radius: 3%;
+  }
+  .cont_etiq_grid {
+    width: 80vw;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+  }
+  .texto h2 {
+    position: absolute;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 20px;
+    bottom: 50px;
+  }
+  .cont_etiq_flip_card-back {
+    padding: 12px;
+  }
+}
+
+/* mobile M*/
+@media screen and (max-width: 375px) and (max-width: 424px) {
+  .cont_banner_slider {
+    width: 80vw;
+  }
+
+  .cont_etiq_grid {
+    width: 80vw;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+  }
+  .texto h2 {
+    position: absolute;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 20px;
+    bottom: 50px;
+  }
+  .cont_etiq_flip_card-back {
+    padding: 12px;
+  }
+}
+
+/* mobile L*/
+@media screen and (max-width: 425px) and (max-width: 767px) {
+  .cont_banner_slider {
+    width: 80vw;
+  }
+  .cont_etiq_grid {
+    width: 80vw;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+  }
+  .texto h2 {
+    position: absolute;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 20px;
+    bottom: 50px;
+  }
+  .cont_etiq_flip_card-back {
+    padding: 12px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) and (max-width: 1023px) {
+  .cont_banner_slider {
+    width: 70vw;
+  }
+
+  .cont_etiq_grid {
+    width: 70vw;
+    margin: 15px auto;
+    display: flex;
+    grid-gap: 10px;
+  }
+  .texto h2 {
+    position: absolute;
+    text-align: left;
+    padding: 0 20px;
+    bottom: 50px;
+  }
+  .cont_etiq_flip_card-back {
+    padding: 12px;
+  }
+}
+
+/* Portatil */
+@media screen and (max-width: 1024px) and (max-width: 1200px) {
+  .cont_banner_slider {
+    width: 60vw;
+  }
+
+  .cont_etiq_grid {
+    width: 60vw;
+    margin: 15px auto;
+    display: flex;
+    grid-gap: 10px;
+  }
+  .texto h2 {
+    position: absolute;
+    text-align: left;
+    padding: 0 20px;
+    bottom: 50px;
+  }
+}
