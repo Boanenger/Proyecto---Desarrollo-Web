@@ -13,13 +13,16 @@
 
 <body>
     <!-- Encabezado -->
-    <header>
-        <div class="logo">
-            <!-- Logo -->
-            <img id="logo" src="static/img/Jah-yire 03.png" alt="logo Jah-yire">
-        </div>
+    <header class="header">
         <!-- Menú de navegación -->
         <nav class="bnav">
+            <img class="logo" src="static/img/Jah-yire 03.png" alt="logo Jah-yire">
+            <!-- Menu hambuerguesa -->
+            <label class="labe_hamburguesa" for="menu_hamburguesa">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+
             <ul class="nav_ul">
                 <li class="nav_li">
                     <i class="fas fa-home"></i>
@@ -43,6 +46,7 @@
                 </li>
             </ul>
         </nav>
+    </header>
 
     <!-- Contenido -->
     <main>
@@ -60,21 +64,21 @@
                         <img class="cont_banner_img" src="static/img/servicios.jpg" alt="">
                         <div class="texto">
                             <h2><a href="templates/conocenos.html">¿Por qué elegirnos?</a></h2>
-                            
+
                         </div>
                     </li>
                     <li class="cont_banner_li">
                         <img class="cont_banner_img" src="static/img/servicios2.jpg" alt="">
                         <div class="texto">
                             <h2><a href="templates/conocenos.html">Nuestra meta</a></h2>
-                            
+
                         </div>
                     </li>
                     <li class="cont_banner_li">
                         <img class="cont_banner_img" src="static/img/limpieza_casas.jpg" alt="">
                         <div class="texto">
                             <h2><a href="templates/conocenos.html">Nuestro compromiso</a></h2>
-                            
+
                         </div>
                     </li>
                 </ul>
@@ -147,20 +151,21 @@
             <ul class="cont_lista">
                 <li class="cont_lista_li">
                     <i class="fab fa-facebook"></i>
-                    <a target="_blank" href="https://www.facebook.com">Facebook</a>
+                    <a target="_blank" href="https://www.facebook.com/">Facebook</a>
                 </li>
                 <li class="cont_lista_li">
                     <i class="fab fa-instagram"></i>
-                    <a target="_blank" href="https://www.instagram.com">@Instagram</a>
+                    <a target="_blank" href="https://www.instagram.com/">@Instagram</a>
                 </li>
                 <li class="cont_lista_li">
                     <i class=" fab fa-x-twitter"></i>
-                    <a href="">Twitter</a>
+                    <a target="_blank" href="https://twitter.com/?lang=es">Twitter</a>
                 </li>
             </ul>
         </div>
     </footer>
 
 </body>
+
 
 </html>

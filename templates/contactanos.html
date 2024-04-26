@@ -13,13 +13,16 @@
 
 <body>
     <!-- Encabezado -->
-    <header>
-        <div>
-            <!-- Logo -->
-            <img id="logo" src="../static/img/Jah-yire 03.png" alt="">
-        </div>
+    <header class="header">
         <!-- Menú de navegación -->
         <nav class="bnav">
+            <img class="logo" src="../static/img/Jah-yire 03.png" alt="logo Jah-yire">
+            <!-- Menu hambuerguesa -->
+            <label class="labe_hamburguesa" for="menu_hamburguesa">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+
             <ul class="nav_ul">
                 <li class="nav_li">
                     <i class="fas fa-home"></i>
@@ -112,7 +115,7 @@
                 <br>
                 <div class="form-servicio">
                     <h3>Servicio que Desea</h3>
-                    <ul class="serv1">
+                    <ul class="serv1 l">
                         <h4>LIMPIEZA DE:</h4>
                         <li>
                             <input type="checkbox" name="servicios" id="casa">
@@ -131,7 +134,7 @@
                             <label for="edificio">EDIFICIO</label>
                         </li>
                     </ul>
-                    <ul class="serv1">
+                    <ul class="serv1 c">
                         <H4>CUIDADO DE:</H4>
                         <li>
                             <input type="checkbox" name="servicios" id="anciano">
@@ -142,7 +145,7 @@
                             <label for="ninos">NIÑOS</label>
                         </li>
                     </ul>
-                    <ul class="serv1">
+                    <ul class="serv1 t">
                         <H4>TUTORIAS DE: </H4>
                         <li>
                             <input type="checkbox" name="servicios" id="primaria">
@@ -153,7 +156,7 @@
                             <label for="secundaria">SECUNDARIA</label>
                         </li>
                     </ul>
-                    <ul class="serv1">
+                    <ul class="serv1 r">
                         <h4>REPARACIONES</h4>
                         <li>
                             <input type="checkbox" name="servicios" id="construccion">
@@ -168,7 +171,7 @@
                             <label for="plomeria">PLOMERIA</label>
                         </li>
                     </ul>
-                    <ul class="otros serv1">
+                    <ul class="otros serv1 ot">
                         <h4 class="otros_tit">OTROS</h4>
                         <li>
                             <input type="checkbox" name="servicios" id="pintor">
@@ -217,10 +220,7 @@
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Borrar">
                 </div>
-
-
             </form>
-
             </div>
         </section>
     </main>
@@ -232,15 +232,15 @@
             <ul class="cont_lista">
                 <li class="cont_lista_li">
                     <i class="fab fa-facebook"></i>
-                    <a href="">Facebook</a>
+                    <a target="_blank" href="https://www.facebook.com/">Facebook</a>
                 </li>
                 <li class="cont_lista_li">
                     <i class="fab fa-instagram"></i>
-                    <a href="">@Instagram</a>
+                    <a target="_blank" href="https://www.instagram.com/">@Instagram</a>
                 </li>
                 <li class="cont_lista_li">
                     <i class=" fab fa-x-twitter"></i>
-                    <a href="">Twitter</a>
+                    <a target="_blank" href="https://twitter.com/?lang=es">Twitter</a>
                 </li>
             </ul>
         </div>

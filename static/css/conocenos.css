@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bell;
+  }
+  
+  @font-face {
+    font-family: bell;
+    src: url("../../assets/font/BELL.TTF");
+  }
+  body{
+    background-image:url(../img/Jah-yire\ 03.png);
+    
+  }

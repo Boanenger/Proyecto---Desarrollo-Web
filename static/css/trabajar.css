@@ -1,20 +1,570 @@
-
-
-
-
-
-/* responsive design */
-/* Portatil */
-@media screen and (max-width: 1024px) and (max-width: 1200px){}
-
-/* Tablet */
-@media screen and (max-width: 768px) and (max-width: 1023px){}
-
-/* mobile L*/
-@media screen and (max-width: 425px) and (max-width: 767px){}
-
-/* mobile M*/
-@media screen and (max-width: 375px) and (max-width: 424px){}
-
-/* mobile S*/
-@media screen and (max-width: 320px) and (max-width: 374px){}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bell;
+  }
+  
+  @font-face {
+    font-family: bell;
+    src: url("../../assets/font/BELL.TTF");
+  }
+  
+  main h1,
+  p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .cont_pcipal {
+    display: grid;
+  }
+  
+  .form {
+    width: 100vw;
+    color: darkred;
+    font-size: 1.5rem;
+    border-radius: 2%;
+    padding: 12px;
+    display: grid;
+    box-shadow: 4px 4px 4px 3px rgb(0, 0, 0, 0.6);
+  }
+  
+  .sec_form {
+    width: 100vw;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .cont_form {
+    padding: 5px;
+    padding-bottom: 25px;
+    width: 100vw;
+    height: auto;
+    margin: 0px auto 0;
+  }
+  
+  .form {
+    width: 100vw;
+    display: grid;
+    margin: auto;
+    align-items: center;
+  }
+  
+  .dato1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .form-nom_ape {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 6px;
+    padding: 0px 100px;
+    font-size: 1.05rem;
+    text-align: justify;
+  }
+  
+  .dato2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+  .form-contac {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 6px;
+    padding: 10px 100px;
+    text-align: justify;
+  }
+  
+  .dato3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .form-direc {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 6px;
+    padding: 0px 100px;
+    text-align: justify;
+  }
+  
+  .form-motiv {
+    display: grid;
+    gap: 10px;
+    margin-top: 6px;
+    padding: 10px 100px;
+    text-align: justify;
+    border-bottom: dotted;
+    border-color: var(--color-logo-sombra);
+  }
+  
+  .form-motiv li {
+    display: inline;
+  }
+  
+  .form-motiv h3 {
+    grid-column: 1/4;
+  }
+  
+  .form-servicio h3 {
+    grid-column: 1/5;
+    text-align: center;
+  }
+  
+  .form-servicio {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px 100px;
+    border-bottom: dashed;
+    border-color: var(--color-logo-sombra);
+  }
+  
+  .serv1 {
+    border-style: double;
+    padding: 10px;
+  }
+  
+  .otros {
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .otros_tit {
+    grid-column: 1/4;
+    text-align: center;
+  }
+  
+  .aceptacion {
+    width: 100vw;
+    padding: 0 100px;
+  }
+  
+  .aceptacion p {
+    text-align: justify;
+  }
+  
+  .aceptacion input {
+    color: darkred;
+  }
+  .form-botones {
+    width: 100vw;
+    color: darkred;
+    height: 30px;
+    margin-top: 6px;
+    text-align: center;
+  }
+  
+  .form-botones input {
+    color: darkred;
+    width: 175px;
+  }
+  
+  /* responsive design */
+  /* Portatil */
+  @media screen and (max-width: 1024px) and (max-width: 1200px) {
+    main h1,
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 5px;
+    }
+    .form {
+      font-size: 1.1rem;
+    }
+  
+    .form-nom_ape,
+    .form-contac {
+      width: 95vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 0px 50px;
+      font-size: 1.05rem;
+      text-align: justify;
+    }
+    .form-direc {
+      width: 95vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 0px 50px;
+      text-align: justify;
+    }
+  }
+  
+  /* Tablet */
+  @media screen and (max-width: 768px) and (max-width: 1023px) {
+    main h1,
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 5px;
+    }
+    .form {
+      font-size: 1.1rem;
+    }
+  
+    .form-nom_ape,
+    .form-contac {
+      width: 95vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 0px 5px;
+      font-size: 1.05rem;
+      text-align: justify;
+    }
+    .form-direc {
+      width: 95vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 0px 5px;
+      text-align: justify;
+    }
+    .form-motiv {
+      display: grid;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 10px 5px;
+      text-align: justify;
+      border-bottom: dotted;
+      border-color: var(--color-logo-sombra);
+    }
+    .form-servicio h3 {
+      grid-column: 1/3;
+      text-align: center;
+    }
+    .form-servicio {
+      width: 90vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 0 5px;
+      border-bottom: dashed;
+      border-color: var(--color-logo-sombra);
+    }
+    .otros {
+      grid-column: 1/2;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .otros_tit {
+      grid-column: 1/3;
+      text-align: center;
+    }
+    .serv1 {
+      font-size: 0.8rem;
+      width: 350px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .serv1 h4 {
+      grid-column: 1/3;
+      text-align: center;
+    }
+    .aceptacion {
+      width: 90vw;
+      padding: 0 5px;
+      font-size: 0.9rem;
+    }
+  
+    .aceptacion p {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+    .form-botones {
+      width: 100vw;
+      font-size: 0.9rem;
+      color: darkred;
+      height: 30px;
+      margin-top: 6px;
+      text-align: center;
+    }
+  
+    .form-botones input {
+      color: darkred;
+      width: 105px;
+    }
+  }
+  
+  /* mobile L*/
+  @media screen and (max-width: 425px) and (max-width: 767px) {
+    main h1,
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 5px;
+    }
+    .form {
+      font-size: 1.1rem;
+    }
+  
+    .form-nom_ape,
+    .form-contac {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 6px;
+      padding: 0px 5px;
+      text-align: justify;
+    }
+    .form-direc {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 1px;
+      padding: 0px 5px;
+      text-align: justify;
+    }
+    .form-motiv {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 10px 10px;
+      text-align: justify;
+      border-bottom: dotted;
+      border-color: var(--color-logo-sombra);
+    }
+    .form-servicio {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0 5px;
+      border-bottom: dashed;
+      border-color: var(--color-logo-sombra);
+    }
+    .serv1 {
+      font-size: 0.8rem;
+      width: 500px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .serv1 h4 {
+      grid-column: 1/3;
+      text-align: center;
+    }
+    .aceptacion {
+      width: 90vw;
+      padding: 0 5px;
+      font-size: 0.9rem;
+    }
+    .aceptacion p {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+    .aceptacion input {
+      font-size: 12px;
+    }
+    .form-botones {
+      width: 100vw;
+      font-size: 0.9rem;
+      color: darkred;
+      height: 30px;
+      margin-top: 6px;
+      text-align: center;
+    }
+  
+    .form-botones input {
+      color: darkred;
+      width: 105px;
+    }
+  }
+  
+  /* mobile M*/
+  @media screen and (max-width: 375px) and (max-width: 424px) {
+    main h1,
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 5px;
+    }
+    .form {
+      font-size: 1.1rem;
+    }
+  
+    .form-nom_ape,
+    .form-contac {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 6px;
+      padding: 0px 5px;
+      text-align: justify;
+    }
+    .form-direc {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 1px;
+      padding: 0px 5px;
+      text-align: justify;
+    }
+    .form-motiv {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 10px 10px;
+      text-align: justify;
+      border-bottom: dotted;
+      border-color: var(--color-logo-sombra);
+    }
+    .form-servicio {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0 5px;
+      border-bottom: dashed;
+      border-color: var(--color-logo-sombra);
+    }
+    .serv1 {
+      font-size: 0.8rem;
+      width: 500px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .serv1 h4 {
+      grid-column: 1/3;
+      text-align: center;
+    }
+    .aceptacion {
+      width: 90vw;
+      padding: 0 5px;
+      font-size: 0.9rem;
+    }
+  
+    .aceptacion p {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+    .aceptacion input {
+      font-size: 12px;
+    }
+    .form-botones {
+      width: 100vw;
+      font-size: 0.9rem;
+      color: darkred;
+      height: 30px;
+      margin-top: 6px;
+      text-align: center;
+    }
+  
+    .form-botones input {
+      color: darkred;
+      width: 105px;
+    }
+  }
+  
+  /* mobile S*/
+  @media screen and (max-width: 320px) and (max-width: 374px) {
+    main h1,
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 5px;
+    }
+    .form {
+      width: 100vw;
+      font-size: 1.1rem;
+    }
+  
+    .form-nom_ape,
+    .form-contac {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 6px;
+      padding: 0px 5px;
+      text-align: justify;
+    }
+    .form-direc {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 1px;
+      padding: 0px 5px;
+      text-align: justify;
+    }
+    .form-motiv {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 10px 10px;
+      text-align: justify;
+      border-bottom: dotted;
+      border-color: var(--color-logo-sombra);
+    }
+    .form-servicio {
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0 5px;
+      border-bottom: dashed;
+      border-color: var(--color-logo-sombra);
+    }
+    .serv1 {
+      font-size: 0.8rem;
+      width: 500px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .serv1 h4 {
+      grid-column: 1/3;
+      text-align: center;
+    }
+    .aceptacion {
+      width: 90vw;
+      padding: 0 5px;
+      font-size: 0.9rem;
+    }
+  
+    .aceptacion p {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+    .aceptacion input {
+      font-size: 12px;
+    }
+    .form-botones {
+      width: 100vw;
+      font-size: 0.9rem;
+      color: darkred;
+      height: 30px;
+      margin-top: 6px;
+      text-align: center;
+    }
+  
+    .form-botones input {
+      color: darkred;
+      width: 105px;
+    }
+  }
+  
