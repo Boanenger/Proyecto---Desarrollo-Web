@@ -16,7 +16,7 @@
     <header class="header">
         <!-- Menú de navegación -->
         <nav class="bnav">
-            <img class="logo" src="../static/img/Jah-yire 03.png" alt="logo Jah-yire">
+            <a href="../index.html" class="bnav_item"><img class="logo" src="../static/img/Jah-yire 03.png" alt="logo Jah-yire"></a>
             <!-- Menu hambuerguesa -->
             <label class="labe_hamburguesa" for="menu_hamburguesa">
                 <i class="fas fa-bars"></i>
@@ -51,47 +51,65 @@
     <!-- Contenido -->
     <main class="cont_pcipal">
         <h1>Formulario de consulta y contratacion</h1>
-        <p>
+        <p class="leyenda">
             Completa el siguiente formulario, y en la brevedad nos pondremos en contacto con vos.
         </p>
         <section class="sec_form">
-            <form class="form">
+            <form class="form"  id="formulario">
                 <div class="cont_form">
                     <div class="form-nom_ape">
-                        <div class="dato1">
+                        <div class="dato1" id="nombre">
                             <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" id="nombre" required>
+                            <input type="text" name="nombre" id="nombre" placeholder="Victor">
+                            <i class="formulario__validacion-estado fas fa-times-circle inp_err_1"></i>
+                            <p class="formulario__input-erro"> El nombre solo puede contener letras y espacios.</p>
                         </div>
-                        <div class="dato1">
+                        
+                        <div class="dato1" id="apellido">
                             <label for="apellido">Apellido:</label>
-                            <input type="text" name="apellido" id="apellido" required>
+                            <input type="text" name="apellido" id="apellido" placeholder="Reyes">
+                            <i class="formulario__validacion-estado fas fa-times-circle inp_err_1"></i>
+                            <p class="formulario__input-erro"> El apellido solo puede contener letras y espacios.</p>
                         </div>
                     </div>
+
                     <br>
                     <div class="form-direc">
-                        <div class="dato2">
+                        <div class="dato2" id="direccion">
                             <label for="direccion">Direccion</label>
-                            <input type="text" name="direccion" id="direccion">
+                            <input type="text" name="direccion" id="direccion" placeholder="Av. Mitre 1500">
+                            <i class="formulario__validacion-estado2 fas fa-times-circle"></i>
+                            <p class="formulario__input-erro"> Es obligatoria</p>
                         </div>
-                        <div class="dato2">
+                        <div class="dato2" id="localidad">
                             <label for="localidad">Localidad:</label>
-                            <input type="text" name="localidad" id="localidad" required>
+                            <input type="text" name="localidad" id="localidad" placeholder="springfield">
+                            <i class="formulario__validacion-estado2 fas fa-times-circle"></i>
+                            <p class="formulario__input-erro"> Es obligatoria</p>
                         </div>
-                        <div class="dato2">
+                        <div class="dato2" id="provincia">
                             <label for="provincia">Provincia:</label>
-                            <input type="text" name="provincia" id="provincia" required>
+                            <input type="text" name="provincia" id="provincia" placeholder="Santa Cruz">
+                            <i class="formulario__validacion-estado2 fas fa-times-circle"></i>
+                            <p class="formulario__input-erro"> Es obligatoria</p>
                         </div>
                     </div>
                     <br>
                     <div class="form-contac">
-                        <div class="dato3">
+                        <div class="dato3" id="telefono">
                             <label for="telefono">Telefono:</label>
-                            <input type="tel" name="telefono" id="telefono" maxlength="10" required>
+                            <input type="tel" name="telefono" id="telefono" placeholder="12345678901">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            <p class="formulario__input-erro"> El telefono solo puede contener números y el maximo son 14 digitos.</p>
                         </div>
-                        <div class="dato3">
+                        
+                        <div class="dato3" id="email">
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email" placeholder="elbarto@gmail.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            <p class="formulario__input-erro"> El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
                         </div>
+                        
                     </div>
                 </div>
 
@@ -199,26 +217,32 @@
                         </li>
                     </ul>
                 </div>
-                <br>
-                <div class="aceptacion">
-                    <p>
-                        JAH-YIRE agradece su colaboración en el llenado de los datos personales solicitados en nuestro
-                        canal
-                        de contacto, por lo anterior solicita su autorización para que de manera previa, libre y
-                        debidamente
-                        informada, permita dar tratamiento a los datos personales de contacto que subministra a través
-                        de la
-                        siguiente plataforma electrónica. Estos datos solo serán utilizados con la finalidad de mantener
-                        una
-                        comunicación efectiva en la cual le serán ofrecidos nuestros productos y servicios.
+                <div class="final">
+                    <div class="aceptacion">
+                        <p>
+                            JAH-YIRE agradece su colaboración en el llenado de los datos personales solicitados en nuestro
+                            canal
+                            de contacto, por lo anterior solicita su autorización para que de manera previa, libre y
+                            debidamente
+                            informada, permita dar tratamiento a los datos personales de contacto que subministra a través
+                            de la
+                            siguiente plataforma electrónica. Estos datos solo serán utilizados con la finalidad de mantener
+                            una
+                            comunicación efectiva en la cual le serán ofrecidos nuestros productos y servicios.
+                        </p>
+                        <input class="checkbox" type="checkbox" name="acepto" id="acepto">
+                        <label for="acepto">Acepto</label>
+                    </div>
+                    <br>
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i><b> Error: Por favor completar el formulario
+                            correctamente.</b></p>
+                    </div>
+                    <div class="form-botones formulario__grupo-btn-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente
                     </p>
-                    <input type="checkbox" name="acepto" id="acepto">
-                    <label for="acepto">Acepto</label>
-                </div>
-                <br>
-                <div class="form-botones">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
                 </div>
             </form>
             </div>
@@ -232,20 +256,24 @@
             <ul class="cont_lista">
                 <li class="cont_lista_li">
                     <i class="fab fa-facebook"></i>
-                    <a target="_blank" href="https://www.facebook.com/">Facebook</a>
+                    <a href="">Facebook</a>
                 </li>
                 <li class="cont_lista_li">
                     <i class="fab fa-instagram"></i>
-                    <a target="_blank" href="https://www.instagram.com/">@Instagram</a>
+                    <a href="">@Instagram</a>
                 </li>
                 <li class="cont_lista_li">
                     <i class=" fab fa-x-twitter"></i>
-                    <a target="_blank" href="https://twitter.com/?lang=es">Twitter</a>
+                    <a href="">Twitter</a>
+                </li>
+                <li class="cont_lista_li">
+                    <a href=""><i class="fas fa-circle-arrow-up"></i></a>
+                    <a href="">Arriva</a>
                 </li>
             </ul>
         </div>
     </footer>
-
+    <script src="../static/js/contactanos.js"></script>
 
 </body>
 

@@ -1,15 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: bell;
-  }
-  
-  @font-face {
-    font-family: bell;
-    src: url("../../assets/font/BELL.TTF");
-  }
-  body{
-    background-image:url(../img/Jah-yire\ 03.png);
-    
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: bell;
+  src: url("../../assets/font/BELL.TTF");
+}
+
+.principal{
+  padding: 20px;
+  background-image:url(../img/J.jpg );
+  background-size: contain;
+  background-position: center;
+  text-align: justify;
+
+}
+h1{
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+h2{
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+h3{
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}

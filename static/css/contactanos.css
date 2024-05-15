@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: bell;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -10,43 +10,49 @@
   src: url("../../assets/font/BELL.TTF");
 }
 
-main h1,
-p {
+.cont_pcipal h1 {
+  width: 95vw;
   font-size: 2rem;
+  text-align: center;
+  padding: 5px;
+}
+.leyenda{
+  width: 95vw;
+  font-size: 1.5rem;
   text-align: center;
   padding: 5px;
 }
 
 .cont_pcipal {
+  width: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
 .form {
-  width: 100vw;
+  width: 95vw;
   color: darkred;
   font-size: 1.5rem;
   border-radius: 2%;
-  padding: 12px;
+  padding: 10px;
   display: grid;
   box-shadow: 4px 4px 4px 3px rgb(0, 0, 0, 0.6);
 }
 
 .sec_form {
-  width: 100vw;
+  width: 100%;
   padding: 10px 10px 10px 10px;
 }
 
 .cont_form {
   padding: 5px;
   padding-bottom: 25px;
-  width: 100vw;
+  width: 92vw;
   height: auto;
-  margin: 0px auto 0;
 }
 
 .form {
-  width: 100vw;
+  height: auto;
   display: grid;
   margin: auto;
   align-items: center;
@@ -56,15 +62,13 @@ p {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-
 .form-nom_ape {
-  width: 100vw;
+  width: 90vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-top: 6px;
-  padding: 0px 100px;
-  font-size: 1.05rem;
+  padding: 0px 20px;
   text-align: justify;
 }
 
@@ -74,12 +78,12 @@ p {
 }
 
 .form-contac {
-  width: 100vw;
+  width: 90vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-top: 6px;
-  padding: 10px 100px;
+  padding: 10px 20px;
   text-align: justify;
 }
 
@@ -89,16 +93,51 @@ p {
 }
 
 .form-direc {
-  width: 100vw;
+  width: 90vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   margin-top: 6px;
-  padding: 0px 100px;
+  padding: 0px 20px;
   text-align: justify;
 }
 
+.formulario__input-erro {
+  font-size: 1rem;
+  margin-bottom: 0;
+  display: none;
+}
+.formulario__input-erro-activo {
+  display: block;
+}
+
+.formulario__validacion-estado {
+  position: relative;
+  align-items: baseline;
+  width: 2vw;
+  height: 3vh;
+  left: 40vw;
+  bottom: 24px;
+  z-index: 100;
+  font-size: 18px;
+  opacity: 0;
+}
+
+
+.formulario__validacion-estado2 {
+  position: relative;
+  align-items:baseline;
+  width: 2vw;
+  height: 3vh;
+  left: 26vw;
+  bottom: 24px;
+  z-index: 100;
+  font-size: 18px;
+  opacity: 0;
+}
+
 .form-motiv {
+  width: 92vw;
   display: grid;
   gap: 10px;
   margin-top: 6px;
@@ -122,7 +161,7 @@ p {
 }
 
 .form-servicio {
-  width: 100vw;
+  width: 92vw;
   display: grid;
   grid-template-rows: repeat(6 1fr);
   grid-template-columns: 1fr 1fr 1fr;
@@ -146,18 +185,45 @@ p {
   grid-column: 1/4;
   text-align: center;
 }
+.final {
+  width: 92vw;
+  display: grid;
+  grid-template-rows: repeat(4 1fr);
+  padding: 0px 05px;
+}
+.formulario__mensaje {
+  width: 85vw;
+  height: 25px;
+  line-height: 25px;
+  background: rgb(193, 201, 206);
+  padding: 0 15px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: none;
+}
+.formulario__mensaje-activo {
+  display: block;
+}
 
 .aceptacion {
-  width: 100vw;
-  padding: 0 100px;
+  width: 85vw;
+  padding: 0 15px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .aceptacion p {
   text-align: justify;
+  font-size: 1rem;
 }
 
 .form-botones {
-  width: 100vw;
   color: darkred;
   height: 30px;
   margin-top: 6px;
@@ -165,8 +231,43 @@ p {
 }
 
 .form-botones input {
-  color: darkred;
   width: 175px;
+  cursor: pointer;
+}
+.form-botones input:hover {
+  box-shadow: 3px 0px 30px rgba(193, 201, 206, 1);
+}
+.formulario__mensaje-exito {
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+  display: none;
+}
+.formulario__mensaje-exito-activo{
+  display: block;
+} */
+
+/* ---- Estilo para validacion ---- */
+
+.correcto .formulario__validacion-estado,
+.formulario__mensaje-exito,
+.correcto .formulario__validacion-estado2 {
+  color: #1ed12e;
+  opacity: 1;
+}
+
+.incorrecto label {
+  color: #f80606;
+}
+
+.incorrecto .formulario__validacion-estado,
+.incorrecto .formulario__validacion-estado2 {
+  color: #f80606;
+  opacity: 1;
+}
+
+.incorrecto input {
+  border: 3px solid #f80606;
 }
 
 /* responsive design */
@@ -177,6 +278,9 @@ p {
     font-size: 1.2rem;
     text-align: center;
     padding: 5px;
+  }
+  .leyenda{
+    font-size: 1.1rem;
   }
   .form {
     font-size: 1.1rem;
@@ -202,6 +306,22 @@ p {
     padding: 0px 50px;
     text-align: justify;
   }
+  .formulario__validacion-estado {
+    position: relative;
+    left: 39vw;
+    bottom: 22px;
+    z-index: 100;
+    font-size: 18px;
+    opacity: 0;
+  }
+  .formulario__validacion-estado2 {
+    position: relative;
+    left: 25vw;
+    bottom: 22px;
+    z-index: 100;
+    font-size: 18px;
+    opacity: 0;
+  }
 }
 
 /* Tablet */
@@ -218,7 +338,7 @@ p {
 
   .form-nom_ape,
   .form-contac {
-    width: 95vw;
+    width: 92vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -228,7 +348,7 @@ p {
     text-align: justify;
   }
   .form-direc {
-    width: 95vw;
+    width: 92vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -250,7 +370,7 @@ p {
     text-align: center;
   }
   .form-servicio {
-    width: 90vw;
+    width: 92vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -278,7 +398,7 @@ p {
     text-align: center;
   }
   .aceptacion {
-    width: 90vw;
+    width: 92vw;
     padding: 0 5px;
     font-size: 0.9rem;
   }
@@ -288,7 +408,7 @@ p {
     text-align: justify;
   }
   .form-botones {
-    width: 100vw;
+    width: 92vw;
     font-size: 0.9rem;
     color: darkred;
     height: 30px;
@@ -299,6 +419,22 @@ p {
   .form-botones input {
     color: darkred;
     width: 105px;
+  }
+  .formulario__validacion-estado {
+    position: relative;
+    left: 41vw;
+    bottom: 22px;
+    z-index: 100;
+    font-size: 18px;
+    opacity: 0;
+  }
+  .formulario__validacion-estado2 {
+    position: relative;
+    left: 26vw;
+    bottom: 22px;
+    z-index: 100;
+    font-size: 18px;
+    opacity: 0;
   }
 }
 
@@ -316,7 +452,7 @@ p {
 
   .form-nom_ape,
   .form-contac {
-    width: 90vw;
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -325,7 +461,7 @@ p {
     text-align: justify;
   }
   .form-direc {
-    width: 90vw;
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -344,7 +480,7 @@ p {
     border-color: var(--color-logo-sombra);
   }
   .form-servicio {
-    width: 90vw;
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -363,17 +499,18 @@ p {
     text-align: center;
   }
   .aceptacion {
-    width: 90vw;
-    padding: 0 5px;
+    width: 92vw;
+    padding: 0 2px;
     font-size: 0.9rem;
   }
 
   .aceptacion p {
+    margin: 5px;
     font-size: 0.9rem;
     text-align: justify;
   }
   .form-botones {
-    width: 100vw;
+    width: 92vw;
     font-size: 0.9rem;
     color: darkred;
     height: 30px;
@@ -382,8 +519,25 @@ p {
   }
 
   .form-botones input {
+    align-items:center;
     color: darkred;
     width: 105px;
+  }
+  .formulario__validacion-estado {
+    position: relative;
+    left: 78vw;
+    bottom: 21px;
+    z-index: 100;
+    font-size: 18px;
+    opacity: 0;
+  }
+  .formulario__validacion-estado2 {
+    position: relative;
+    left: 47vw;
+    bottom: 22px;
+    z-index: 100;
+    font-size: 18px;
+    opacity: 0;
   }
 }
 
@@ -401,7 +555,7 @@ p {
 
   .form-nom_ape,
   .form-contac {
-    width: 90vw;
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -410,7 +564,7 @@ p {
     text-align: justify;
   }
   .form-direc {
-    width: 90vw;
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -429,7 +583,7 @@ p {
     border-color: var(--color-logo-sombra);
   }
   .form-servicio {
-    width: 90vw;
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -448,7 +602,7 @@ p {
     text-align: center;
   }
   .aceptacion {
-    width: 90vw;
+    width: 92vw;
     padding: 0 5px;
     font-size: 0.9rem;
   }
@@ -458,7 +612,7 @@ p {
     text-align: justify;
   }
   .form-botones {
-    width: 100vw;
+    width: 92vw;
     font-size: 0.9rem;
     color: darkred;
     height: 30px;
@@ -486,7 +640,7 @@ p {
 
   .form-nom_ape,
   .form-contac {
-    width: 90vw;
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -495,7 +649,7 @@ p {
     text-align: justify;
   }
   .form-direc {
-    width: 90vw;
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -504,6 +658,7 @@ p {
     text-align: justify;
   }
   .form-motiv {
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -514,7 +669,7 @@ p {
     border-color: var(--color-logo-sombra);
   }
   .form-servicio {
-    width: 90vw;
+    width: 92vw;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -533,7 +688,7 @@ p {
     text-align: center;
   }
   .aceptacion {
-    width: 90vw;
+    width: 92vw;
     padding: 0 5px;
     font-size: 0.9rem;
   }
@@ -543,7 +698,7 @@ p {
     text-align: justify;
   }
   .form-botones {
-    width: 100vw;
+    width: 92vw;
     font-size: 0.9rem;
     color: darkred;
     height: 30px;
